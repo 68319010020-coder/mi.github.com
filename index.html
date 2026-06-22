@@ -1,0 +1,146 @@
+```html
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- เกี่ยวกับหน่วยงาน -->
+        <div class="footer-box">
+            <h2>🏢 เกี่ยวกับหน่วยงาน</h2>
+            <p>
+                เรามุ่งมั่นพัฒนาเทคโนโลยีและนวัตกรรม
+                เพื่อยกระดับคุณภาพการให้บริการและการเรียนรู้
+                ให้ทันต่อโลกดิจิทัล
+            </p>
+        </div>
+
+        <!-- เมนูเว็บไซต์ -->
+        <div class="footer-box">
+            <h2>🌐 เมนูเว็บไซต์</h2>
+            <ul>
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#about">เกี่ยวกับเรา</a></li>
+                <li><a href="#service">บริการ</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </div>
+
+        <!-- ติดต่อ -->
+        <div class="footer-box">
+            <h2>📞 ช่องทางการติดต่อ</h2>
+            <p>📍 กรุงเทพมหานคร ประเทศไทย</p>
+            <p>📱 081-234-5678</p>
+            <p>📧 info@website.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 My Modern Website | All Rights Reserved
+    </div>
+</footer>
+
+<style>
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
+
+/* Footer */
+.footer{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+    color:white;
+    padding:60px 20px 20px;
+    margin-top:50px;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+/* กล่อง */
+.footer-box{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:20px;
+    transition:0.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.footer-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* หัวข้อ */
+.footer-box h2{
+    margin-bottom:15px;
+    color:#38bdf8;
+    font-size:22px;
+}
+
+/* ข้อความ */
+.footer-box p{
+    line-height:1.8;
+    color:#e2e8f0;
+}
+
+/* เมนู */
+.footer-box ul{
+    list-style:none;
+}
+
+.footer-box ul li{
+    margin:12px 0;
+}
+
+.footer-box ul li a{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    display:inline-block;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+/* Hover Menu */
+.footer-box ul li a:hover{
+    background:linear-gradient(45deg,#06b6d4,#3b82f6);
+    color:white;
+    transform:translateX(10px);
+    box-shadow:0 0 15px rgba(59,130,246,0.6);
+}
+
+/* Copyright */
+.footer-bottom{
+    text-align:center;
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    color:#cbd5e1;
+    font-size:14px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .footer{
+        text-align:center;
+    }
+
+    .footer-box ul li a:hover{
+        transform:scale(1.05);
+    }
+}
+
+</style>
+```
